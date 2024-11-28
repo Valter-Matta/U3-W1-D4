@@ -23,7 +23,7 @@ class SingleBook extends Component {
 						<p className=" text-center">{this.props.book.price}</p>
 					</Card.Body>
 				</Card>
-				{/* {this.state.selected && <CommentArea />} */}
+				{this.state.selected && <CommentArea bookid={this.props.book.asin} />}
 			</>
 		);
 	}
